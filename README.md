@@ -2,11 +2,10 @@
 
 안드로이드의 코틀린을 공부하기 위하여 정리한 문서입니다.
 
-# 1. Kotlin이란?
+# 1. [Kotlin](https://kotlinlang.org/)이란?
 
 안드로이드 및 웹 개발에서 Java를 대체할 목적으로 JetBrain에서 개발한 언어이다.
-
-[Kotlin](https://kotlinlang.org/) | [Github](https://github.com/JetBrains/kotlin)
+[![Logo](https://user-images.githubusercontent.com/79628706/202858867-8c5e189f-07f6-43a4-8003-529fd0b1a758.png)](https://github.com/JetBrains/kotlin)
 
 ### 특징은?
 
