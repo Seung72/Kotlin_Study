@@ -352,3 +352,142 @@ class BirthDay(val name: String, var year: Int, var month: Int, var day: Int) {
 - init: Class가 새로 생성될 때마다 어떠한 기능을 넣고 싶을 때
 - private set: 외부에서 set을 사용하고 싶지 않은 경우 (Setter 기능 제한)
 - get() = "\$field": 외부에 값을 보내고 싶은 경우, 꼭 "$field"라는 이름으로 사용해야한다.(Getter 기능)
+
+## Extands
+
+Kotlin의 상속은 Java와 다르게 기본적으로 상속의 오버라이드를 허용하지 않는다.
+따라서 아래와 같이 추상 클래스에서 open과 override 키워드를 사용하여 오버라이드를 사용할 수 있게 지정한다.
+
+```
+abstract class Coffee {
+    open fun espresso() {
+        print("에스프레소")
+    }
+}
+
+class Americano : Coffee() {
+    override fun espresso() {
+        print("에스프레소 2샷")
+    }
+
+}
+
+class Latte : Coffee()
+```
+
+클래스 상속의 경우에도 마찬가지.
+
+```
+open class Notebook
+
+class Macbook : Notebook()
+```
+
+위와 같은 형식으로 open 해줘야 상속할 수 있다.
+
+## Interface
+
+```
+interface Drawable {
+    fun draw()
+}
+
+class Sketch : Drawable {
+    override fun draw() {
+        ...
+    }
+
+}
+```
+
+## Type Check
+
+타입 체크 시에 if문과 is를 이용한다.
+상속받은 클래스와 비교해도 사용 가능하다.
+이런 경우엔 상속 클래스에서 선언한 함수만 사용가능하다.
+
+```
+fun main() {
+    val dog: Animal = Dog()
+
+    if (dog is Dog) {
+        print("True")
+        dog.move()
+        dog.howl()
+    } else {
+        print("False")
+    }
+}
+
+abstract class Animal {
+    open fun move() {
+        print("이동")
+    }
+}
+
+class Dog : Animal() {
+    override fun move() {
+        print("사족보행")
+    }
+    fun howl() {
+        print("짖기")
+    }
+}
+class cat : Animal() {
+    ...
+}
+```
+
+#### as를 이용한 강제 형변환
+
+```
+cat as Dog // 오류가 발생할 수도 있다.
+```
+
+as를 사용하여 강제적인 형변환이 가능하다.
+
+## Generic
+
+```
+fun main() {
+    val box = Box(10)
+    val box2 = Box("문자열")
+
+    print(box.value)
+}
+
+class Box<T>(var value: T)
+```
+
+자료형을 추론해주는 기능을 이용하여
+제네릭을 사용할 수 있다.
+
+## 콜백 함수 (고차 함수)
+
+```
+fun main(10) {
+    myFunc {
+        println("호출")
+    }
+}
+fun myFunc(a: Int, callBack : () -> Unit) {
+    println("시작")
+    callBack()
+    println("끝")
+}
+```
+
+#### 정지함수 suspend
+
+```
+class MainActivity ..{
+    lifecycleScope.launch {
+        myFunc(10) {
+
+        }
+    }
+}
+suspend fun myFunc(...) {...}
+```
+
+suspend 함수는 일반적으로 그냥 메인클래스나 액티비티에서 바로 사용할 수 없고 suspend를 앞에 선언해주거나 lifecycleScope를 거쳐야 사용할 수 있다. 추후에 suspend를 사용해야하는 이유를 알게된다면 설명에 추가할 수 있도록 하겠다.
