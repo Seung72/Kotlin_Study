@@ -19,7 +19,9 @@
 <div markdown="1">
 <ol>
 <li><a href="https://github.com/Seung72/Kotlin_Study/blob/main/contents/01.%20%EB%AC%B8%EB%B2%95.md">문법</a></li>
+<li><a>ViewBinding</a></li>
 <li><a href="">TextView</a></li>
+<li><a>EditText & Button</a></li>
 </ol>
 </div>
 </details>
