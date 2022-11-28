@@ -1,8 +1,14 @@
 # 2. ViewBinding
 
-## ViewBinding을 사용하는 이유?
+ViewBinding 기능 사용 시 뷰와 상호작용하는 코드를 쉽게 작성할 수 있다.
+모듈에서 사용 설정된 ViewBinding은 각 XML 레이아웃 파일의 바인딩 클래스를 생성한다.
+바인딩 클래스의 인스턴스에는 상응하는 레이아웃에 ID가 있는 모든 뷰의 직접 참조가 포함된다.
 
-- **Null Safe**: *findViewById*와는 다르게 뷰를 직접 참조하지 않으므로 Null상태로 강제로 할당되었을 때 나타나는 *NullPointerException*을 방지할 수 있다.
+### vs findViewById
+
+- **Null Safe**: *findViewById*와는 다르게 뷰의 직접 참조를 생성하기 때문에 *NullPointerException*을 방지할 수 있다.
+
+- **Type safety**: 각 바인딩 클래스에 있는 필드 유형이 XML 파일에서 참조하는 뷰와 일치한다. 즉, 클래스 변환 예외가 발생할 위험이 없다.
 
 - **코드의 단순화**: XML 레이아웃마다 바인딩 클래스를 자동으로 생성하기 때문에 코드를 단순화할 수 있다.
 
@@ -27,7 +33,6 @@ android {
 ## 일반적 사용
 
 ```
-
 class MainActivity : AppCompatActivity() {
 
     //ActivityXXXBinding 규칙으로 객체를 불러와 전역 변수 선언
@@ -87,3 +92,8 @@ class MainFragment : Fragment() {
 }
 
 ```
+
+---
+
+참조
+[구글 공식문서](https://developer.android.com/topic/libraries/view-binding)

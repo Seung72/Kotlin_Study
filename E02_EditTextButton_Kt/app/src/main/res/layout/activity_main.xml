@@ -1,32 +1,3 @@
-# 4. EditText & Button
-
-### EditText
-
-EditText는 텍스트를 입력하고 수정하기 위한 사용자 인터페이스 요소이다.
-
-```
-kotlin.Any
-    ↳android.view.View
-        ↳android.widget.TextView
-            ↳android.widget.EditText
-```
-
-### Button
-
-사용자가 탭하거나 클릭하여 작업을 수행할 수 있는 사용자 인터페이스 요소이다.
-
-```
-kotlin.Any
-    ↳android.view.View
-        ↳android.widget.TextView
-            ↳android.widget.Button
-```
-
-## layout xml 파일 생성
-
-activity_main.xml
-
-```
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -69,33 +40,3 @@ activity_main.xml
         app:layout_constraintTop_toBottomOf="@+id/et_id" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-```
-
-## Activity
-
-MainActivity.kt
-
-```
-class MainActivity : AppCompatActivity() {
-
-    private var mBinding: ActivityMainBinding? = null
-    private val binding get() =  mBinding!!
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        mBinding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-
-        binding.btnGetText.setOnClickListener {
-            binding.tvTitle.text = binding.etId.text.toString()
-        }
-    }
-    override fun onDestroy() {
-        mBinding = null
-        super.onDestroy()
-    }
-}
-```
-
-버튼 클릭 시 TextView에 EditText에 입력된 값이 입력되는 예제이다.
-TextView와 같이 값을 가져오거나 입력할때 .text 형식으로 입력할 수 있다.
