@@ -99,3 +99,8 @@ class MainActivity : AppCompatActivity() {
 
 버튼 클릭 시 TextView에 EditText에 입력된 값이 입력되는 예제이다.
 TextView와 같이 값을 가져오거나 입력할때 .text 형식으로 입력할 수 있다.
+
+---
+
+참조
+[구글 공식문서 (EditText)](https://developer.android.com/reference/kotlin/android/widget/EditText), [구글 공식문서 (Button)](https://developer.android.com/s/results/?q=button), [홍드로이드](https://www.youtube.com/watch?v=J-PsYQlgPWw&list=PLC51MBz7PMywN2GJ53aF0UO5fnHGjW35a&index=2)

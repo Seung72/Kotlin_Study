@@ -74,5 +74,5 @@ class MainActivity : AppCompatActivity() {
 ---
 
 참조
-[구글 공식문서](https://developer.android.com/reference/kotlin/android/widget/TextView)
+[구글 공식문서](https://developer.android.com/reference/kotlin/android/widget/TextView),
 [홍드로이드](https://www.youtube.com/watch?v=IaXhn_I_ziY&list=PLC51MBz7PMywN2GJ53aF0UO5fnHGjW35a&index=1)
