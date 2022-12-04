@@ -28,7 +28,6 @@ activity_main.xml
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
     <ImageView
         android:id="@+id/iv_profile"
         android:layout_width="200dp"
@@ -38,7 +37,6 @@ activity_main.xml
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_android_black_24dp" />
-
     <Button
         android:id="@+id/btn_Toast"
         android:layout_width="70dp"
@@ -74,7 +72,6 @@ class MainActivity : AppCompatActivity() {
 
             Toast.makeText(this@MainActivity, "클릭하셨어요!", Toast.LENGTH_SHORT).show()
         }
-
     }
 }
 ```
@@ -84,6 +81,6 @@ class MainActivity : AppCompatActivity() {
 ---
 
 참조
-[구글 공식문서(ImageView)](https://developer.android.com/reference/kotlin/android/media/Image?hl=en)
-[구글 공식문서(Toast)](https://developer.android.com/reference/kotlin/android/widget/Toast?hl=en)
+[구글 공식문서(ImageView)](https://developer.android.com/reference/kotlin/android/media/Image?hl=en),
+[구글 공식문서(Toast)](https://developer.android.com/reference/kotlin/android/widget/Toast?hl=en),
 [홍드로이드](https://www.youtube.com/watch?v=fmiwEfFrjsM&list=PLC51MBz7PMywN2GJ53aF0UO5fnHGjW35a&index=5)
