@@ -24,7 +24,8 @@
 <li><a href="https://github.com/Seung72/Kotlin_Study/blob/main/contents/EditText%26Button.md">EditText & Button</a></li>
 <li><a href="https://github.com/Seung72/Kotlin_Study/blob/main/contents/Intent.md">Intent</a></li>
 <li><a href="https://github.com/Seung72/Kotlin_Study/blob/main/contents/ImageView%26Toast.md">ImageView & Toast</a></li>
-<li><a href="">ListView</a></li>
+<li><a href="https://github.com/Seung72/Kotlin_Study/blob/main/contents/ListView.md">ListView</a></li>
+<li><a href="">NavigationView</a></li>
 </ol>
 </div>
 </details>
