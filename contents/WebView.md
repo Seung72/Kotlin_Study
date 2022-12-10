@@ -1,6 +1,6 @@
 # 10. WebView
 
-`WebView`는 디스플레이를 보여주는 `View`이다.
+`WebView`는 웹을 보여주는 `View`이다.
 
 ```
 kotlin.Any

@@ -15,7 +15,7 @@
 - 람다식의 문법을 사용하고 세미콜론을 생략한다.
 
 <details>
-<summary>목록 보기/가리기</summary>
+<summary>바로가기 목록</summary>
 <div markdown="1">
 <ol>
 <li><a href="https://github.com/Seung72/Kotlin_Study/blob/main/contents/%EB%AC%B8%EB%B2%95.md">문법</a></li>
@@ -26,7 +26,9 @@
 <li><a href="https://github.com/Seung72/Kotlin_Study/blob/main/contents/ImageView%26Toast.md">ImageView & Toast</a></li>
 <li><a href="https://github.com/Seung72/Kotlin_Study/blob/main/contents/ListView.md">ListView</a></li>
 <li><a href="https://github.com/Seung72/Kotlin_Study/blob/main/contents/NavigationView.md">NavigationView</a></li>
-<li><a href="">SharedPreferences</a></li>
+<li><a href="https://github.com/Seung72/Kotlin_Study/blob/main/contents/SharedPreferences.md">SharedPreferences</a></li>
+<li><a href=https://github.com/Seung72/Kotlin_Study/blob/main/contents/WebView.md"">WebView</a></li>
+<li><a href="">Fragment</a></li>
 </ol>
 </div>
 </details>
