@@ -12,7 +12,7 @@ kotlin.Any
 
 activity_main.xml
 
-```
+```XML
 <LinearLayout
       xmlns:android="http://schemas.android.com/apk/res/android"
       android:layout_width="match_parent"
@@ -29,7 +29,7 @@ activity_main.xml
 
 MainActivity.kt
 
-```
+```KOTLIN
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -49,7 +49,7 @@ class MainActivity : AppCompatActivity() {
 
 ## viewBinding 사용
 
-```
+```KOTLIN
 class MainActivity : AppCompatActivity() {
 
     private var mBinding: ActivityMainBinding? = null

@@ -26,7 +26,7 @@ kotlin.Any
 
 activity_main.xml
 
-```
+```XML
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -75,7 +75,7 @@ activity_main.xml
 
 MainActivity.kt
 
-```
+```KOTLIN
 class MainActivity : AppCompatActivity() {
 
     private var mBinding: ActivityMainBinding? = null

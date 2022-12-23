@@ -9,7 +9,7 @@
 
 #### activity_main.xml
 
-```
+```XML
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -53,7 +53,7 @@
 
 #### frag1.xml
 
-```
+```XML
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -79,7 +79,7 @@
 
 Fragment1.kt
 
-```
+```KOTLIN
 class Fragment1 : Fragment() {
     private var mBinding: Frag1Binding? = null
     private val binding get() = mBinding!!
@@ -99,7 +99,7 @@ class Fragment1 : Fragment() {
 
 MainActivity.kt
 
-```
+```KOTLIN
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {

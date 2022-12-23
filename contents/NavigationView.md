@@ -12,7 +12,7 @@ java.lang.Object
 
 ### bulid.gradle(:app) 설정
 
-```
+```JAVA
 dependencies {
     ...
     implementation 'com.google.android.material:material:1.7.0'
@@ -36,7 +36,7 @@ Resource type이 menu인 폴더 생성
 
 navi_menu.xml
 
-```
+```XML
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <group android:checkableBehavior="single">
         <item android:id="@+id/notification"
@@ -56,7 +56,7 @@ navi_menu.xml
 
 activity_main.xml
 
-```
+```XML
 <androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -97,7 +97,7 @@ activity_main.xml
 
 MainActivity.kt
 
-```
+```KOTLIN
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
     private lateinit var binding: ActivityMainBinding
@@ -118,7 +118,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
 `btnNavi`에 `setOnClickListener`를 지정하여 클릭 시 `layoutDrawer`가 `openDrawer`할 수 있도록 한다. 여기서 `GravityCompat.START`를 사용하여 왼쪽에서 오른쪽으로 요소가 이동할 수 있게 지정(왼쪽에 요소가 있다고 지정하고 open 기능이 가운데로 이동하게 구현되는 것 같다)한다. 오른쪽에서 메뉴가 나오게 하고 싶다면 xml과 해당 부분에서 `END`로 변경해주어야 한다.
 
-```
+```KOTLIN
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         when (item.itemId)
         {
@@ -133,7 +133,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
 메뉴 안의 `item`들이 클릭 됐을 때의 상호작용 요소를 지정해준다. `closeDrawers()`를 설정해주지 않으면 메뉴 개체가 선택됐을 때 메뉴가 닫히지 않는다. 또한 반환을 요구하기 때문에 `return true`까지 작성해준다.
 
-```
+```KOTLIN
     override fun onBackPressed() {
         if (binding.layoutDrawer.isDrawerOpen(GravityCompat.START)){
             binding.layoutDrawer.closeDrawers()

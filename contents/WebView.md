@@ -14,7 +14,7 @@ kotlin.Any
 
 AndroidManifest.xml
 
-```
+```XML
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
     <uses-permission android:name="android.permission.INTERNET"/>
@@ -43,7 +43,7 @@ AndroidManifest.xml
 
 activity_main.xml
 
-```
+```KOTLIN
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -72,7 +72,7 @@ activity_main.xml
 
 MainActivity.kt
 
-```
+```KOTLIN
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
@@ -95,7 +95,7 @@ class MainActivity : AppCompatActivity() {
 - `binding.webView.webChromeClient = WebChromeClient()`: 웹뷰 사용 시 크롬 클라이언트를 사용할 수 있도록 할당한다.
 - `binding.webView.loadUrl("https://www.naver.com")`: 해당 URL을 Load하도록 지정한다.
 
-```
+```KOTLIN
     override fun onBackPressed() {
         if(binding.webView.canGoBack()) {
             binding.webView.goBack()

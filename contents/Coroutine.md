@@ -38,7 +38,7 @@ A라는 함수와 B라는 함수가 순서대로 작동된다고 했을 때, B�
 
 ## build.gradle (:app)
 
-```
+```JAVA
 dependencies {
     implementation 'com.squareup.okhttp3:okhttp:4.10.0'
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.9'
@@ -53,7 +53,7 @@ dependencies {
 
 activity_main.xml
 
-```
+```XML
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -76,7 +76,7 @@ activity_main.xml
 
 MainActivity.kt
 
-```
+```KOTLIN
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {

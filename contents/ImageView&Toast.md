@@ -21,7 +21,7 @@ kotlin.Any
 
 activity_main.xml
 
-```
+```XML
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -56,7 +56,7 @@ ImageView에 구애받지 않고 다른 뷰에서도 `android:background`로 지
 
 MainActivity.kt
 
-```
+```KOTLIN
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding

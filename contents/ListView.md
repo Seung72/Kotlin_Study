@@ -18,7 +18,7 @@ kotlin.Any
 
 activity_main.xml
 
-```
+```XML
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
@@ -42,7 +42,7 @@ activity_main.xml
 
 list_item_user.xml
 
-```
+```XML
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -94,7 +94,7 @@ list_item_user.xml
 
 ## Activity
 
-```
+```KOTLIN
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
 
@@ -133,7 +133,7 @@ UserAdapter.kt 클래스를 생성하여 `Adapter`에 변수로 선언하고 `li
 
 #### User.kt
 
-```
+```KOTLIN
 class User(val profile: Int, val name: String, val age: String, val greet: String)
 ```
 
@@ -141,7 +141,7 @@ class User(val profile: Int, val name: String, val age: String, val greet: Strin
 <summary>Java Getter/Setter 보기</summary>
 <div markdown="1">
 
-```
+```JAVA
 public class User {
     private Int profile;
     private String name;
@@ -186,7 +186,7 @@ public class User {
 
 #### UserAdapter.kt
 
-```
+```KOTLIN
 // BaseAdapter를 상속 받아 implement를 자동 생성한다.
 // UserList를 ArrayList형으로 선언하고 생성한 User를 담아서 사용한다.
 class UserAdapter(val context: Context, val UserList: ArrayList<User>) : BaseAdapter() {

@@ -14,7 +14,7 @@ android.content.SharedPreferences
 
 activity_main.xml
 
-```
+```XML
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -44,7 +44,7 @@ activity_main.xml
 
 MainActivity.kt
 
-```
+```KOTLIN
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
@@ -70,7 +70,7 @@ class MainActivity : AppCompatActivity() {
 - saveData: `EditText`의 내용을 특정 변수에 담고 저장한다.
 - loadData: `EditText`에 저장된 내용 또는 없을 시 기본 값을 할당한다.
 
-```
+```KOTLIN
     private fun saveData() {
         val prefName = getSharedPreferences("pref", 0)
         val edit = prefName.edit()
@@ -90,7 +90,7 @@ prefName에 `getSharedPreferences(String name, int mode)` 객체를 담아준다
 edit 변수에 prefName.edit()을 담아서 수정할 수 있게 변경한다.
 이후 `putStirng(String name, String data)` 키, 값 형태로 값을 저장한다.
 
-```
+```KOTLIN
     private fun loadData() {
         val prefName = getSharedPreferences("pref", 0)
         binding.etHello.setText(prefName.getString("name","Guest"))

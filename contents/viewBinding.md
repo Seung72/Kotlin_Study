@@ -16,7 +16,7 @@ ViewBinding 기능 사용 시 뷰와 상호작용하는 코드를 쉽게 작성�
 
 build.gradle(Module: 앱이름) 파일에서 작성
 
-```
+```JAVA
 android {
     ...
     buildTypes {
@@ -28,11 +28,23 @@ android {
 }
 ```
 
+또는
+
+```JAVA
+android {
+    ...
+    viewBinding {
+        enabled true
+    }
+        ...
+}
+```
+
 위와 같이 선언하고 이후 Sync Gradle 진행
 
 ## 일반적 사용
 
-```
+```KOTLIN
 class MainActivity : AppCompatActivity() {
 
     //ActivityXXXBinding 규칙으로 객체를 불러와 전역 변수 선언
@@ -64,9 +76,31 @@ class MainActivity : AppCompatActivity() {
 }
 ```
 
+또는
+
+```KOTLIN
+class MainActivity : AppCompatActivity() {
+
+    lateinit val binding: ActivityMainBinding
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        var view = binding.root
+        setContentView(view)
+        binding.tvTitle.text = "안녕하세요!"
+    }
+
+    override fun onDestroy() {
+        mBinding = null
+        super.onDestroy()
+    }
+}
+```
+
 ## Fragment에서의 사용
 
-```
+```KOTLIN
 class MainFragment : Fragment() {
 
     //액티이비와 같은 방식으로 선언한다.

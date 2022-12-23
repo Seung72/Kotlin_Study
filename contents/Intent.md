@@ -11,7 +11,7 @@ kotlin.Any
 
 ##### activity_main.xml
 
-```
+```XML
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -46,7 +46,7 @@ kotlin.Any
 
 ##### activity_sub.xml
 
-```
+```KOTLIN
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -70,7 +70,7 @@ kotlin.Any
 
 ##### MainActivity.kt
 
-```
+```KOTLIN
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
@@ -96,7 +96,7 @@ intent객체에 현재 Activity와 이동할 Activity를 초기화하고 `intent
 
 ##### SubActivity.kt
 
-```
+```KOTLIN
 class SubActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivitySubBinding

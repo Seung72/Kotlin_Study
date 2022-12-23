@@ -11,7 +11,7 @@ kotlin.Any
 
 ### build.gradle(:app)
 
-```
+```JAVA
 dependencies {
     implementation 'androidx.recyclerview:recyclerview:1.2.1'
     ...
@@ -24,7 +24,7 @@ dependencies {
 
 #### list_item.xml
 
-```
+```XML
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -100,7 +100,7 @@ dependencies {
 
 #### activity_main.xml
 
-```
+```XML
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -123,7 +123,7 @@ dependencies {
 
 #### Profiles.kt
 
-```
+```KOTLIN
 class Profiles(val gender: Int, val name: String, val age: Int, val job: String)
 ```
 
@@ -131,7 +131,7 @@ class Profiles(val gender: Int, val name: String, val age: Int, val job: String)
 
 #### ProfileAdapter.kt
 
-```
+```KOTLIN
 class ProfileAdapter(val profileList: ArrayList<Profiles>) : RecyclerView.Adapter<ProfileAdapter.CustomViewHolder>() {
     class CustomViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val gender = itemView.findViewById<ImageView>(R.id.iv_profile)
@@ -176,7 +176,7 @@ class ProfileAdapter(val profileList: ArrayList<Profiles>) : RecyclerView.Adapte
 
 MainActivity.kt
 
-```
+```KOTLIN
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
