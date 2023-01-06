@@ -1,7 +1,8 @@
 # Android-Kotlin-Study
 
 - 안드로이드 Kotlin을 공부하기 위하여 정리한 문서입니다.
-- 안드로이드에서의 JAVA를 어느정도 사용한 경험이 있다는 전제로 기술하였습니다.
+- 안드로이드에서의 Java를 어느정도 사용한 경험이 있다는 전제로 기술하였습니다.
+- [Jetpack Compose](https://developer.android.com/jetpack/compose?gclid=CjwKCAiAqt-dBhBcEiwATw-ggHCEXhSPIByWu9In5zNs0vJKH7KEOPoiNrMBpNA3x7Of5RfLJhsarxoCqBwQAvD_BwE&gclsrc=aw.ds)는 [여기](https://github.com/Seung72/Jetpack_Compose_Study)에서 따로 다루겠습니다.
 
 # 0. [Kotlin](https://kotlinlang.org/)이란?
 
@@ -31,6 +32,7 @@
 <li><a href="https://github.com/Seung72/Kotlin_Study/blob/main/contents/RecyclerView.md">RecyclerView</a></li>
 <li><a href="https://github.com/Seung72/Kotlin_Study/blob/main/contents/Fragment.md">Fragment</a></li>
 <li><a href="https://github.com/Seung72/Kotlin_Study/blob/main/contents/Coroutine.md">Coroutine</a></li>
+
 </ol>
 </div>
 </details>
