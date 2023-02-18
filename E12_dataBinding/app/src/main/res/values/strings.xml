@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">E12_dataBinding</string>
+    <string name="greetings"> "%1$s %2$s" ⬅️ 데이터 바인딩을 적용한 예시</string>
+</resources>
