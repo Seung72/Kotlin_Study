@@ -32,6 +32,7 @@
 <li><a href="https://github.com/Seung72/Kotlin_Study/blob/main/contents/RecyclerView.md">RecyclerView</a></li>
 <li><a href="https://github.com/Seung72/Kotlin_Study/blob/main/contents/Fragment.md">Fragment</a></li>
 <li><a href="https://github.com/Seung72/Kotlin_Study/blob/main/contents/Coroutine.md">Coroutine</a></li>
+<li><a href="https://github.com/Seung72/Kotlin_Study/blob/main/contents/dataBinding.md">DataBinding</a></li>
 
 </ol>
 </div>
