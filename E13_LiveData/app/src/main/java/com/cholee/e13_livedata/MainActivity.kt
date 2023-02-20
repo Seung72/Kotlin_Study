@@ -26,12 +26,18 @@ class MainActivity : AppCompatActivity() {
 
         binding.btnApply.setOnClickListener{
             val userText = binding.etLiveText.text.toString()
-            if (staticStr == userText) liveData.value = userText + " 중복 횟수 ${++cnt}"
-            else {
+            if (userText != "") {
+                if (staticStr == userText) liveData.value = userText + " 중복 횟수 ${++cnt}"
+                else {
+                    cnt = 0
+                    staticStr = userText
+                    liveData.value = userText + " 중복 횟수 ${++cnt}"
+                }
+            } else {
                 cnt = 0
-                staticStr = userText
-                liveData.value = userText + " 중복 횟수 ${++cnt}"
+                liveData.value = "아무 값도 입력되어 있지 않습니다."
             }
+
         }
     }
 }
