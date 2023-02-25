@@ -33,7 +33,8 @@
 <li><a href="https://github.com/Seung72/Kotlin_Study/blob/main/contents/Fragment.md">Fragment</a></li>
 <li><a href="https://github.com/Seung72/Kotlin_Study/blob/main/contents/Coroutine.md">Coroutine</a></li>
 <li><a href="https://github.com/Seung72/Kotlin_Study/blob/main/contents/dataBinding.md">DataBinding</a></li>
-
+<li><a href="https://github.com/Seung72/Kotlin_Study/blob/main/contents/LiveData.md">LiveData</a></li>
+<li><a href="https://github.com/Seung72/Kotlin_Study/blob/main/contents/MVVM.md">MVVM</a></li>
 </ol>
 </div>
 </details>
