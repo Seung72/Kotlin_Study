@@ -1,16 +1,21 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'com.google.devtools.ksp' version '1.8.0-1.0.8'
 }
 
 android {
     namespace 'com.cholee.e15_room'
-    compileSdk 32
+    compileSdk 33
+
+    viewBinding {
+        enabled = true
+    }
 
     defaultConfig {
         applicationId "com.cholee.e15_room"
         minSdk 23
-        targetSdk 32
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
@@ -33,6 +38,12 @@ android {
 }
 
 dependencies {
+    def room_version = "2.5.0"
+
+    implementation "androidx.room:room-runtime:$room_version"
+    annotationProcessor "androidx.room:room-compiler:$room_version"
+
+    ksp "androidx.room:room-compiler:$room_version"
 
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'

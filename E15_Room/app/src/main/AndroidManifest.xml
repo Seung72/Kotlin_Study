@@ -13,8 +13,17 @@
         android:theme="@style/Theme.E15_Room"
         tools:targetApi="31">
         <activity
+            android:name=".AddActivity"
+            android:exported="true"
+            android:label="@string/app_name">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
