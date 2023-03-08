@@ -128,3 +128,10 @@ class MainActivity : AppCompatActivity() {
   - 함수에 인자를 전달하고 실행하는 역할이다.
   - 네트워크 통신은 메인스레드 환경에서 제한되기 때문에 별도의 쓰레드를 사용한다.
   - 쓰레드 환경에서 UI를 업데이트 하기 위해서 `runOnUiThread{...}`블록을 만들어 제어한다.
+
+---
+
+참고
+[구글 공식문서](https://developer.android.com/reference/java/net/HttpURLConnection),
+[CLIEL LAB](https://lab.cliel.com/entry/Kotlin-HttpURLConnection),
+[투케이2K](https://kkh0977.tistory.com/2604)
