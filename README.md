@@ -35,6 +35,9 @@
 <li><a href="https://github.com/Seung72/Kotlin_Study/blob/main/contents/dataBinding.md">DataBinding</a></li>
 <li><a href="https://github.com/Seung72/Kotlin_Study/blob/main/contents/LiveData.md">LiveData</a></li>
 <li><a href="https://github.com/Seung72/Kotlin_Study/blob/main/contents/MVVM.md">MVVM</a></li>
+<li><a href="https://github.com/Seung72/Kotlin_Study/blob/main/contents/Room.md">Room</a></li>
+<li><a href="https://github.com/Seung72/Kotlin_Study/blob/main/contents/HttpURLConnection.md">HttpURLConnection</a></li>
+<li><a href="https://github.com/Seung72/Kotlin_Study/blob/main/contents/OKHttp.md">OkHttp</a></li>
 </ol>
 </div>
 </details>
