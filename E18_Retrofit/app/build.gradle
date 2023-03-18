@@ -5,12 +5,16 @@ plugins {
 
 android {
     namespace 'com.cholee.e18_retrofit'
-    compileSdk 32
+    compileSdk 33
+
+    viewBinding {
+        enabled true
+    }
 
     defaultConfig {
         applicationId "com.cholee.e18_retrofit"
         minSdk 23
-        targetSdk 32
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
@@ -33,6 +37,13 @@ android {
 }
 
 dependencies {
+
+    def retrofit_version = "2.9.0"
+
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
+    implementation "com.squareup.retrofit2:converter-scalars:$retrofit_version"
+    implementation "com.google.code.gson:gson:$retrofit_version"
 
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
